@@ -1,17 +1,35 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDom from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import {mice} from './mice';
+import Display from './Display';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+function Greeting() {
+  return (
+    <div className='greet'>
+      {mice.map((bok) => {
+        // const{Company,Remarks,Image} = bok;
+        // return(
+        //   <div>
+        //     <img src={Image} alt=''/>
+        //     <h3>{Company}</h3>
+        //     <h1>{Remarks}</h1>
+        //     </div>
+        // )
+        return(
+          <Display bok={bok}></Display>
+          // <div>
+          //   <img src={bok.Image} alt="" />
+          //   <h3>{bok.Company}</h3>
+          //   <h1>{bok.Remarks}</h1>
+          // </div>
+        );
+      })}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+    </div> 
+  );
+}
+
+
+
+ReactDom.render(<Greeting />,document.getElementById('root'));
