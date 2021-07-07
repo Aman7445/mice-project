@@ -1,12 +1,12 @@
 import React from 'react'
 
 const Display = (props) => {
-  const {Company,Remarks,Image}=props.bok;
+  const {id,Company,Remarks,Image}=props.bok;
   return (
-    <article className='items'>
+    <article key={id} className='items'>
       <img src={Image} alt='' />
-        <h1>{Company}</h1>
-        <h4>{Remarks}</h4>
+        <h4>{Company}</h4>
+        <p>{Remarks}</p>
       
     </article>
   );
