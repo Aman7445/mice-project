@@ -14,7 +14,7 @@ export const mice=[
   {
     id:3,
     Company:'Corsair Katar Pro Ultra-Light Optical Gaming Mouse',
-    Remarks:'Ultra-Light and Agile:Weighing just 69g,the KATAR PRO is great for hours of fast-paced FPS or MOBA gameplay',
+    Remarks:'Ultra-Light and Agile:Weighing just 69g,great for hours of fast-paced FPS or MOBA gameplay',
     Image:'https://m.media-amazon.com/images/I/81nEx+Nxw9L._AC_UY327_FMwebp_QL65_.jpg'
   }
 ]

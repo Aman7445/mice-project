@@ -7,7 +7,6 @@ const Display = (props) => {
       <img src={Image} alt='' />
         <h4>{Company}</h4>
         <p>{Remarks}</p>
-      
     </article>
   );
 }

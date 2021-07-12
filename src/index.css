@@ -9,9 +9,9 @@ body{
 }
 
 .greet{
-    width: 90vw;
-    max-width: 1170px;
-    margin: 5rem auto;
+    width: 70vw;
+    max-width: 1000px;
+    margin: 3rem auto;
     display: grid;
     gap: 1rem;
 }
@@ -24,7 +24,11 @@ body{
 .items{
     background:lightblue;
     border-radius: 1rem;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
+    transition: all .2s ease-in-out;
+}
+.items:hover{
+    transform:scale(1.1);
 }
 .p{
     text-decoration: bold;
