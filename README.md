@@ -1,4 +1,4 @@
-## A basic react project made while learning.
+## A basic react app project made for learning purposes.
 
 # Getting Started with Create React App
 
