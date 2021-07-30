@@ -1,24 +1,21 @@
-import React from 'react';
-import ReactDom from 'react-dom';
-import './index.css';
-import {mice} from './mice';
-import Display from './Display';
-import SearchBox from './searchbox'
+import React from "react";
+import ReactDom from "react-dom";
+import "./index.css";
+import { mice } from "./mice";
+import Display from "./Display";
+import SearchBox from "./searchbox";
 
 function Greeting() {
   return (
     <div>
-      <h1>Mice Catalog</h1>
+      <h1 id="title">Mice Catalog</h1>
       <SearchBox />
-    <div className='greet'>
-      {mice.map((bok) => {
-        return(
-          <Display bok={bok}></Display>
-        );
-      })}
-
-    </div> 
+      <div className="greet">
+        {mice.map((bok) => {
+          return <Display bok={bok}></Display>;
+        })}
+      </div>
     </div>
   );
 }
-ReactDom.render(<Greeting />,document.getElementById('root'));
+ReactDom.render(<Greeting />, document.getElementById("root"));
