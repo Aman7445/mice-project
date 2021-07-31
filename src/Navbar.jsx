@@ -1,6 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
+
+const nav = () => {
+  let options = document.querySelectorAll(".options");
+  let slide = document.querySelector(".slide");
+  options.forEach((ele, index) => {
+    ele.addEventListener("mouseover", () => {
+      slide.style.left = (4000 / options.length) * index + "%";
+    });
+  });
+};
 
 const Navbar = () => {
+  useEffect(() => {
+    nav();
+  });
   return (
     <nav>
       <ul>
