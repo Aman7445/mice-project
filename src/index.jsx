@@ -12,7 +12,7 @@ function Greeting() {
       <Navbar />
       <br />
       <h1 id="title">Mice Catalog</h1>
-      <SearchBox />
+      {/* <SearchBox /> */}
       <div className="greet">
         {mice.map((bok) => {
           return <Display bok={bok}></Display>;
