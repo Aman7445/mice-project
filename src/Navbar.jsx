@@ -1,40 +1,23 @@
-import React, { useEffect } from "react";
-
-const nav = () => {
-  let options = document.querySelectorAll(".options");
-  let slide = document.querySelector(".slide");
-  options.forEach((ele, index) => {
-    ele.addEventListener("mouseover", () => {
-      slide.style.left = (4000 / options.length) * index + "%";
-    });
-  });
-};
+import React from "react";
 
 const Navbar = () => {
-  useEffect(() => {
-    nav();
-  });
   return (
-    <nav>
-      <ul>
-        <li>
-          <a href="#" className="option">
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="#" className="option">
-            Contact
-          </a>
-        </li>
-        <li>
-          <a href="#" className="option">
-            About
-          </a>
-        </li>
-      </ul>
-      <span className="slide"></span>
-    </nav>
+    <>
+      <header>
+        <input type="checkbox" name="" class="navbtn" />
+        <div class="nav">
+          <ol>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li></li>
+          </ol>
+        </div>
+      </header>
+    </>
   );
 };
 
