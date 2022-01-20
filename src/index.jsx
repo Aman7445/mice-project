@@ -3,7 +3,7 @@ import ReactDom from "react-dom";
 import "./index.css";
 import { mice } from "./mice";
 import Display from "./Display";
-import SearchBox from "./searchbox";
+// import SearchBox from "./searchbox";
 import Navbar from "./Navbar";
 
 function Greeting() {

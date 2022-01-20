@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <>
-      <header>
+      {/* <header>
         <input type="checkbox" name="" class="navbtn" />
         <div class="nav">
           <ol>
@@ -16,7 +16,7 @@ const Navbar = () => {
             <li></li>
           </ol>
         </div>
-      </header>
+      </header> */}
     </>
   );
 };
